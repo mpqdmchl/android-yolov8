@@ -1,0 +1,19 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        // gradle 7.4 对应的gradle plugin 版本为7.3,参考：https://developer.android.google.cn/build/releases/gradle-plugin?hl=zh-cn#groovy
+        // gradle plugin  7.3 时 gradle JDK：GRADLE_LOCAL_JAVA_HOME
+        classpath 'com.android.tools.build:gradle:7.3.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
